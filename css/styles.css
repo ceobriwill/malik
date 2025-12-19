@@ -1,0 +1,227 @@
+/* *{display: none;} */
+.logo { font-size: 25px;
+    color: #2563eb;
+  font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
+    cursor: pointer;}
+.WILL{color:#f59e0b;} 
+header a {text-decoration: none;}
+
+.main-header {background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+margin: 0%;}
+ .searchbox {background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid rgb(206, 206, 206);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    /* max-width:400px ; */
+    width: 400px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;}
+
+.main-header input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 600;}
+
+.searchbox:focus {outline: none;
+    border-color: rgba(255, 165, 0, 0.6);}
+
+.search-button {background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+font-family: "inter", sans-serif;}
+.search-button:hover {
+    background-color: #1d4ed8;}
+.top-icons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-family: Arial, sans-serif;}
+
+.icon-item {text-align: center;
+    font-size: 14px;
+    color:blue;
+    position: relative;
+    cursor: pointer;}
+.cart {text-align: center;
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    cursor: pointer;}
+
+.icon-item i {font-size: 18px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+/* Cart count (red circle number) */
+.cart-count {position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-attachment: fixed; */
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    text-transform: capitalize;
+
+}
+
+main {
+    margin: 10px;
+    padding: 0;
+    /* background-image: url('../img/background.jpg');
+    background-size: cover; */
+    background-attachment: fixed;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    text-transform: capitalize;
+
+}
+
+.container {
+  display:flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.item { width: 150px;
+    height: 300px;
+    background: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: #158edf 2px 2px 5px;
+    border-radius: 15px;
+ 
+}
+  .itemww { width:1000px;
+    height: 300px;
+    background: #ffffff;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: #158edf 2px 2px 5px;
+    border-radius: 15px;
+  
+  }
+.tech{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}  
+/* Responsive Design */
+@media (max-width: 768px) {
+  .searchbox {
+    width: 250px;
+  }
+  
+  .top-icons {
+    gap: 15px;
+  }
+  
+  .main-header {
+    padding-right: 3%;
+  }
+}
+
+@media (max-width: 480px) {
+  .searchbox {
+    width: 230px;
+    font-size: 14px;
+  }
+  
+  .search-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  
+  .logo {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  
+  .top-icons {
+    gap: 10px;
+  }
+  
+  .icon-item, .cart {
+    font-size: 12px;
+  }
+  
+  .icon-item i {
+    font-size: 16px;
+  }
+  
+  .product {
+    width: 120px;
+    height: 100px;
+    margin: 5px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .searchbox {
+    width: 215px;
+    font-size: 12px;
+  }
+  
+  .search-button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  
+  .logo {
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  
+  .top-icons {
+    gap: 8px;
+  }
+  
+  .icon-item, .cart {
+    font-size: 10px;
+  }
+  
+  .icon-item i {
+    font-size: 14px;
+  }
+  
+  .product {
+    width: 100px;
+    height: 80px;
+    margin: 3px;
+    padding: 10px;
+  }
+    
+}
